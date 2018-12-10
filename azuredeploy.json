@@ -139,28 +139,28 @@
 			}
 		},
 		"masterInstanceCount": {
-			"type": "string",
+			"type": "int",
 			"defaultValue": 3,
 			"metadata": {
 				"description": "Number of OpenShift masters."
 			}
 		},
 		"infraInstanceCount": {
-			"type": "string",
+			"type": "int",
 			"defaultValue": 3,
 			"metadata": {
 				"description": "Number of OpenShift infra nodes. 1 is non HA. Choose 2 or 3 for HA"
 			}
 		},
 		"nodeInstanceCount": {
-			"type": "string",
+			"type": "int",
 			"defaultValue": 2,
 			"metadata": {
 				"description": "Number of OpenShift nodes"
 			}
 		},
 		"dataDiskSize": {
-			"type": "string",
+			"type": "int",
 			"defaultValue": 64,
 			"metadata": {
 				"description": "Size of Datadisk in GB for Docker volume"
