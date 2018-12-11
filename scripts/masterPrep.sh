@@ -41,12 +41,6 @@ RETCODE=$?
 if [ $RETCODE -eq 0 ]
 then
     echo "Subscribed successfully"
-elif [ $RETCODE -eq 64 ]
-then
-    echo "This system is already registered."
-else
-    echo "Incorrect Username / Password or Organization ID / Activation Key specified"
-    exit 3
 fi
 
 subscription-manager attach --pool=$POOL_ID > attach.log
