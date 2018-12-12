@@ -43,11 +43,15 @@ then
     echo "Subscribed successfully"
 fi
 
+sleep 1m
+
 subscription-manager attach --pool=$POOL_ID > attach.log
 if [ $? -eq 0 ]
 then
     echo "Pool attached successfully"
 fi
+
+sleep 1m
 
 # Disable all repositories and enable only the required ones
 echo $(date) " - Disabling all repositories and enabling only the required repos"
