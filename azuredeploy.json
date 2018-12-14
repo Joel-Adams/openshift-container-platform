@@ -1121,7 +1121,31 @@
 						"priority": 100,
 						"direction": "Inbound"
 					}
-				}]
+				}, {
+        "name": "allowHTTPS_all",
+        "properties": {
+          "description": "Allow HTTPS connections from all locations",
+          "protocol": "Tcp",
+          "sourcePortRange": "*",
+          "destinationPortRange": "443",
+          "sourceAddressPrefix": "*",
+          "destinationAddressPrefix": "*",
+          "access": "Allow",
+          "priority": 200,
+          "direction": "Inbound"        
+        }, {
+        "name": "allow8080_all",
+        "properties": {
+          "description": "Allow port 8080 connections from all locations",
+          "protocol": "Tcp",
+          "sourcePortRange": "*",
+          "destinationPortRange": "8080",
+          "sourceAddressPrefix": "*",
+          "destinationAddressPrefix": "*",
+          "access": "Allow",
+          "priority": 200,
+          "direction": "Inbound"
+        }]
 			}
 		}, {
 			"apiVersion": "[variables('apiVersionNetwork')]",
