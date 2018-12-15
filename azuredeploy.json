@@ -540,8 +540,8 @@
 		"diagStorageAccount1": "[concat('diag1', uniqueString(concat(resourceGroup().id, 'dsa1')))]",
 		"diagStorageAccount2": "[concat('diag2', uniqueString(concat(resourceGroup().id, 'dsa2')))]",
 		"newStorageAccountRegistry": "[concat('registry', uniqueString(concat(resourceGroup().id, 'registry')))]",
-		"newStorageAccountPersistentVolume1": "[concat('pv1sa', uniqueString(concat(resourceGroup().id, 'persistentvolume1')))]",
-		"newStorageAccountArray": [
+    "newStorageAccountPersistentVolume1": "[concat('pv1sa', uniqueString(concat(resourceGroup().id, 'persistentvolume1')))]",
+  	"newStorageAccountArray": [
 			{ "name": "[variables('diagStorageAccount1')]", "tagName": "DiagnosticsStorageAccount", "skuName": "[variables('storageSkuObject').diagnostics.skuName]", "skuTier": "[variables('storageSkuObject').diagnostics.skuTier]" },
 			{ "name": "[variables('diagStorageAccount2')]", "tagName": "DiagnosticsStorageAccount", "skuName": "[variables('storageSkuObject').diagnostics.skuName]", "skuTier": "[variables('storageSkuObject').diagnostics.skuTier]" },
 			{ "name": "[variables('newStorageAccountRegistry')]", "tagName": "RegistryStorageAccount", "skuName": "[variables('storageSkuObject').registry.skuName]", "skuTier": "[variables('storageSkuObject').registry.skuTier]" },
@@ -623,7 +623,7 @@
 		"nodeDataUri": "[concat(parameters('storageKind'), 'NodeDataUri')]",
 		"cnsUri": "[concat(parameters('storageKind'), 'CnsUri')]",
 		"bastionPublicIp": "bastionpublicip",
-                "bastionPublicIpDnsLabel": "bastiondns",
+    "bastionPublicIpDnsLabel": "[concat('bastiondns', (resourceGroup().name))]",
 		"infraLbPublicIpDnsLabel": "[concat('infradns', uniqueString(concat(resourceGroup().id, 'infra')))]",
 		"openshiftMasterPublicIpDnsLabel": "[concat('masterdns', uniqueString(concat(resourceGroup().id, 'master')))]",
 		"persistentVolume1Type": "Standard_LRS",
