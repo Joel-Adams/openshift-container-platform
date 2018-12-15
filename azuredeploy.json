@@ -1132,7 +1132,8 @@
           "destinationAddressPrefix": "*",
           "access": "Allow",
           "priority": 200,
-          "direction": "Inbound"        
+          "direction": "Inbound"
+	  }
         }, {
         "name": "allowHTTP_all",
         "properties": {
@@ -1144,7 +1145,8 @@
           "destinationAddressPrefix": "*",
           "access": "Allow",
           "priority": 200,
-          "direction": "Inbound"        
+          "direction": "Inbound"
+	  }
         }, {
         "name": "allow8080_all",
         "properties": {
@@ -1157,6 +1159,7 @@
           "access": "Allow",
           "priority": 200,
           "direction": "Inbound"
+	  }
         }]
 			}
 		}, {
