@@ -623,7 +623,7 @@
 		"nodeDataUri": "[concat(parameters('storageKind'), 'NodeDataUri')]",
 		"cnsUri": "[concat(parameters('storageKind'), 'CnsUri')]",
 		"bastionPublicIp": "bastionpublicip",
-    "bastionPublicIpDnsLabel": "[concat('bastiondns', (resourceGroup().id))]"",
+    "bastionPublicIpDnsLabel": "bastiondns",
 		"infraLbPublicIpDnsLabel": "[concat('infradns', uniqueString(concat(resourceGroup().id, 'infra')))]",
 		"openshiftMasterPublicIpDnsLabel": "[concat('masterdns', uniqueString(concat(resourceGroup().id, 'master')))]",
 		"persistentVolume1Type": "Standard_LRS",
