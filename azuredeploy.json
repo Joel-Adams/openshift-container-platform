@@ -643,7 +643,7 @@
 		"infraLbBackendPoolId": "[concat(variables('infraLbId'),'/backendAddressPools/loadBalancerBackend')]",
 		"infraLbHttpProbeId": "[concat(variables('infraLbId'),'/probes/httpProbe')]",
 		"infraLbHttpsProbeId": "[concat(variables('infraLbId'),'/probes/httpsProbe')]",
-		
+
 		"privateMasterFrontEndIpConfigurationProperties": {
 			"privateIPAddress": "[parameters('masterPrivateClusterIp')]",
 			"privateIPAllocationMethod": "Static",
@@ -1133,7 +1133,7 @@
           "access": "Allow",
           "priority": 200,
           "direction": "Inbound"
-	  }
+	  			}
         }, {
         "name": "allowHTTP_all",
         "properties": {
@@ -1146,7 +1146,7 @@
           "access": "Allow",
           "priority": 200,
           "direction": "Inbound"
-	  }
+	  			}
         }, {
         "name": "allow8080_all",
         "properties": {
@@ -1159,7 +1159,7 @@
           "access": "Allow",
           "priority": 200,
           "direction": "Inbound"
-	  }
+	  			}
         }]
 			}
 		}, {
@@ -2496,7 +2496,7 @@
 					]
 				},
 				"protectedSettings": {
-					"commandToExecute": "[concat('bash ', variables('nodePrepScriptFileName'), ' ', parameters('rhsmUsernameOrOrgId'), ' ', variables('singlequote'), parameters('rhsmPasswordOrActivationKey'), variables('singlequote'), ' ', parameters('rhsmPoolId'), ' ', variables('singlequote'), parameters('proxySettings'), variables('singlequote'), ' ', variables('singlequote'), parameters('httpProxyEntry'), variables('singlequote'), ' ', variables('singlequote'), parameters('httpsProxyEntry'), variables('singlequote'), ' ', variables('singlequote'), parameters('noProxyEntry'), variables('singlequote'))]"	
+					"commandToExecute": "[concat('bash ', variables('nodePrepScriptFileName'), ' ', parameters('rhsmUsernameOrOrgId'), ' ', variables('singlequote'), parameters('rhsmPasswordOrActivationKey'), variables('singlequote'), ' ', parameters('rhsmPoolId'), ' ', variables('singlequote'), parameters('proxySettings'), variables('singlequote'), ' ', variables('singlequote'), parameters('httpProxyEntry'), variables('singlequote'), ' ', variables('singlequote'), parameters('httpsProxyEntry'), variables('singlequote'), ' ', variables('singlequote'), parameters('noProxyEntry'), variables('singlequote'))]"
 				}
 			}
 		}, {
