@@ -42,7 +42,7 @@ then
     echo "Subscribed successfully"
 fi
 
-sleep 2m
+sleep 5m
 
 subscription-manager attach --pool=$POOL_ID > attach.log
 if [ $? -eq 0 ]
