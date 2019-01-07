@@ -599,7 +599,7 @@ rm -rf /home/${SUDOUSER}/openshift-container-platform-playbooks
 echo $(date) " - Delete pem files"
 rm -rf /tmp/*.pem
 
-echo $(date) " - Sleep for 30"
-sleep 30
+echo $(date) " - Sleep for 45"
+sleep 45
 
 echo $(date) " - Script complete"
