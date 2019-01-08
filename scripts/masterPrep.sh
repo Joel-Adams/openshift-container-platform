@@ -73,7 +73,7 @@ yum -y install wget git net-tools bind-utils iptables-services bridge-utils bash
 yum -y install cloud-utils-growpart.noarch
 yum -y install ansible
 yum -y update glusterfs-fuse
-yum -y update --exclude=WALinuxAgent
+yum -y update
 echo $(date) " - Base package insallation and updates complete"
 
 # Grow Root File System
