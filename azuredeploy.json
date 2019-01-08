@@ -673,7 +673,7 @@
 		"imageReference": {
 			"publisher": "RedHat",
 			"offer": "RHEL",
-			"sku": "7.5",
+			"sku": "7.6",
 			"version": "latest"
 		},
 		"marketplacePlan":{
@@ -683,7 +683,7 @@
 		},
 		"redHatTags": {
 			"app": "OpenShiftContainerPlatform",
-			"version": "3.10",
+			"version": "3.11",
 			"platform": "AzurePublic",
 			"provider": "9d2c71fc-96ba-4b4a-93b3-14def5bc96fc"
 		},
